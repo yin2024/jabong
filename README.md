@@ -20,7 +20,7 @@ $ git pull
 
 匯入資料庫
 
-將`./dumps/*.sql`匯入至本機資料庫，並與專案做連結。
+將`https://github.com/yingray/jabong-dumps/dumps/*.sql`匯入至本機資料庫，並與專案做連結。
 
 (本團隊主以MySQL Workbench進行匯入作業)
 
