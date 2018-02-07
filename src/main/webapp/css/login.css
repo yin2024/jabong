@@ -1,0 +1,244 @@
+@import url(http://fonts.googleapis.com/css?family=Exo:100,200,400);
+
+@import
+	url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300)
+	;
+
+@charset "utf-8";
+
+a, a:hover, a:focus, a:active, a.active {
+	outline: 0;
+	color: #18bc9c;
+}
+
+.header div {
+	float: left;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 50px;
+	font-weight: 200;
+}
+
+.header div span {
+	color: #FF8000 !important;
+}
+
+.login input {
+	width: 250px;
+	height: 30px;
+	background: transparent;
+	border: 1px solid rgba(255, 255, 255, 0.6);
+	border-radius: 2px;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+	margin-bottom: 8px;
+}
+
+.login input[type=button] {
+	width: 250px;
+	height: 30px;
+	background: orange;
+	border: 1px solid #fff;
+	cursor: pointer;
+	border-radius: 2px;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.login input[type=submit] {
+	width: 250px;
+	height: 30px;
+	background: #fff;
+	border: 1px solid orange;
+	cursor: pointer;
+	border-radius: 2px;
+	color: orange;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.login input[type=button]:hover {
+	opacity: 0.8;
+}
+
+.login input[type=button]:active {
+	opacity: 0.6;
+}
+
+.login input[type=button]:focus {
+	outline: none;
+}
+
+.login input[type=submit]:hover {
+	opacity: 0.8;
+}
+
+.login input[type=submit]:active {
+	opacity: 0.6;
+}
+
+.login input[type=submit]:focus {
+	outline: none;
+}
+
+.login input[type=text]:focus {
+	outline: none;
+	border: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+.login input[type=password]:focus {
+	outline: none;
+	border: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+::-webkit-input-placeholder {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+::-moz-input-placeholder {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.loader {
+	text-align: center;
+}
+
+.loader div {
+	background: #fff;
+	position: absolute;
+	width: 70%;
+	height: 280px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background-image: url(svg/ripple.svg);
+	background-position: center;
+	background-size: cover;
+	border-radius: 100%;
+	padding: 0 0;
+	opacity: 0.8;
+}
+
+.header p {
+	color: #fff;
+}
+
+/*css: supersized*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: #8FC2FF;
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+img {
+	border: none;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	overflow: hidden;
+	/*Needed to eliminate scrollbars*/
+	background: #cb8347;
+}
+
+#content {
+	margin: 0px auto;
+	/*height: 230px;*/
+	width: 100%;
+	bottom: 5%;
+	z-index: 3;
+	background: rgba(0%, 0%, 0%, 0.6);
+	/*border-top: 1px solid #000;
+    border-bottom: 1px solid #4F4F4F;*/
+	position: absolute;
+}
+
+#contentframe {
+	overflow: hidden;
+	/*border-top: solid 1px #4F4F4F;
+    border-bottom: 1px solid #000;*/
+	height: 100%;
+	text-align: left;
+	z-index: 3;
+}
+
+#slidecounter {
+	float: left;
+	color: #4F4F4F;
+	font: 50px "Helvetica Neue", Arial, sans-serif;
+	font-weight: bold;
+	margin: 18px 20px;
+}
+
+#slidecaption {
+	overflow: hidden;
+	float: left;
+	color: #FFF;
+	font: 26px "Helvetica Neue", Arial, sans-serif;
+	font-weight: bold;
+	margin: 33px 0;
+}
+
+/*Supersized Stamp*/
+.stamp {
+	float: right;
+	margin: 25px 20px 0 0;
+}
+
+/*Supersize Plugin Styles*/
+#navigation {
+	background: url('images/navbg.gif') no-repeat;
+	float: right;
+	margin: 22px 20px 0 0;
+}
+
+#loading {
+	position: absolute;
+	width: 200px;
+	height: 320px;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	background: #fff;
+}
+
+#supersize {
+	position: fixed;
+	/*圖片模糊*/
+	/*-webkit-filter: blur(2px);*/
+}
+
+#supersize img, #supersize a {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: 0;
+}
+
+#supersize .prevslide, #supersize .prevslide img {
+	z-index: 1;
+}
+
+#supersize .activeslide, #supersize .activeslide img {
+	z-index: 2;
+}

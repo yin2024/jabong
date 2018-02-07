@@ -1,0 +1,234 @@
+@import "font-awesome.css";
+
+html {
+	width: 100%;
+}
+
+/* text-decoration: none;游標碰到時不會顯示底線 */
+a[href^="tel:"] {
+	color: inherit;
+	text-decoration: none;
+}
+
+body {
+	position: relative;
+	background-color: #fff;
+	color: #979090;
+	font: 14px/20px 'Open Sans', sans-serif;
+}
+
+/****Heads****/
+h1, h2, h3, h4, h5, h6 {
+	color: #ff8c00;
+	font-weight: bold;
+	text-align: center;
+	font-family: 'BenchNine', 'sans-serif';
+}
+
+/****Links****/
+a {
+	text-decoration: none;
+	color: inherit;
+	outline: none;
+	transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+}
+
+a:hover {
+	/*     color: #fe7676; */
+	color: #ff8c00;
+	text-decoration: none;
+}
+
+/*header*/
+header {
+	display: block;
+	position: relative;
+}
+
+/* header的logo靠左邊 */
+header h1 {
+	position: relative;
+	text-align: center;
+	float: left;
+}
+
+header h1 a {
+	display: inline-block;
+	overflow: hidden;
+	font-size: 0;
+	line-height: 0;
+	text-indent: -999px;
+	transition: 0s ease;
+	-o-transition: 0s ease;
+	-webkit-transition: 0s ease;
+}
+
+/* header的logo高50px */
+header h1 a img {
+	display: block;
+	height: 50px;
+}
+
+/**Content**/
+.main {
+	/* background-color: #1c1c1c; */
+	
+}
+
+/****classes****/
+
+/* 做完float都要套這個回到第一層 */
+.clear {
+	float: none !important;
+	clear: both;
+}
+
+/* gift遊戲畫面的大圖塊 */
+#left {
+	width: 50%;
+	float: left;
+	height: 80%;
+	text-align: center;
+	line-height: 300px;
+	font-size: 15px;
+	color: #ffffff;
+	font-weight: bold;
+	background-color: #ff8c00;
+}
+
+#right {
+	width: 50%;
+	height: 80%;
+	text-align: center;
+	line-height: 300px;
+	font-size: 15px;
+	color: #ff8c00;
+	font-weight: bold;
+	background-color: #fffaf5;
+	float: left;
+}
+
+/* friend動態頁面 */
+.sectionFriends {
+	border: 1px solid #ff8c00;
+	margin: 5px;
+	padding: 50px;
+	border-radius: 20px;
+}
+
+/* box-shadow:1px 3px 5px #999;
+調整每個朋友動態陰影
+ */
+.articleFriends {
+	/*     border: 1px solid #ff8c00; */
+	/*     border: 1px solid #999; */
+	margin: 30px;
+	padding: 8px;
+	border-radius: 40px;
+	box-shadow: 1px 7px 15px #999;
+}
+
+/* friend動態 */
+.foodPicture {
+	/*    border: 1px solid #ff8c00; */
+	position: relative;
+	overflow: hidden;
+	/*     margin: 1px; */
+}
+
+.foodPicture:after {
+	/*     padding-top: 56.25%; */
+	padding-top: 20%;
+	content: "";
+	display: block;
+}
+
+.profile_img {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	max-width: 30%;
+	margin: auto;
+	x
+}
+
+/* 所有friend的頭貼 */
+.articleAllFriends {
+	/* border: 1px solid #ff8c00; */
+	/*  border: 1px solid #999; */
+	display: inline-block;
+	width: 30%;
+	height: 60%;
+	margin: 10px;
+	border-radius: 20px;
+	box-shadow: 1px 7px 15px #999;
+}
+
+.profilePicture {
+	width: 80%;
+	margin-left: 10%;
+}
+
+/**Footer**/
+.copy {
+	float: left;
+	padding-top: 5px;
+	font-weight: 300;
+}
+
+.copy .brand {
+	position: relative;
+	top: -2px;
+	font-size: 18px;
+}
+
+footer {
+	display: block;
+	color: #e2e2e2;
+	padding: 33px 0 15px;
+}
+
+.footer_socials {
+	float: right;
+}
+
+.footer_socials .fa {
+	border-radius: 500px;
+	/*         background-color: #ddd; */
+	background-color: #ff8c00;
+	color: #fff;
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+	font-size: 30px;
+	display: block;
+	float: left;
+}
+
+.footer_socials .fa:hover {
+	background-color: #a9a9a9;
+}
+
+.footer_socials .fa.fa-pinterest {
+	font-size: 36px;
+}
+
+.footer_socials .fa+.fa {
+	margin-left: 20px;
+	text-decoration: none;
+}
+
+.sub_copy {
+	font-weight: normal;
+	padding-top: 6px;
+	color: #aaa;
+}
+
+.fa fa-twitter:hover {
+	text-decoration: none;
+}

@@ -1,0 +1,39 @@
+.map {
+	background-size: 480px 500px;
+}
+
+.map-container {
+	position: relative;
+	padding-bottom: 100%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+
+.map-container iframe, .map-container object, .map-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#message {
+	height: 500px;
+	width: 500px;
+	/*overflow: hidden;*/
+}
+
+/* 平板:600px以上 */
+@media only screen and (min-width: 600px) {
+	.map {
+		background-size: 600px 500px;
+	}
+}
+
+/* 電腦:900px以上 */
+@media only screen and (min-width: 960px) {
+	.map {
+		background-size: 900px 500px;
+	}
+}

@@ -1,0 +1,119 @@
+/*=======Dropzon 格式=======*/
+
+#dropzone {
+    position: relative;
+    border: 2px dotted #FB9966;
+    border-radius: 20px;
+    color: #FB9966;
+    background: #fff;
+    font: bold 24px/100px arial;
+    height: 100px;
+    margin: 30px auto;
+    text-align: center;
+    width: 90%;
+}
+
+#dropzone.hover {
+    /*background: #B55D4C;*/
+    background: lightyellow;
+}
+
+#dropzone.dropped {
+    /*background: #7D6C46;*/
+    background: seashell;
+}
+
+#dropzone div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#dropzone img {
+    border-radius: 10px;
+    vertical-align: middle;
+    max-width: 95%;
+    max-height: 95%;
+}
+
+#dropzone [type="file"] {
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+}
+
+
+/*=======post 基本格式=======*/
+
+#post {
+    border: solid 1px #ccc;
+    background: #fff;
+}
+
+#postPic {
+    background: #fff;
+    text-align: center;
+}
+
+#postInfo {
+    background: #fff;
+}
+
+.f {
+    background: #fff;
+    border: dotted 1px orange;
+    width: 100%;
+    margin-bottom: 10px;
+    color: #FB9966;
+    padding-left: 10px;
+}
+
+.ff {
+    margin-top: 10px;
+}
+
+.starRating:not(old) {
+    display: inline-block;
+    width: 7.5em;
+    height: 1.5em;
+    overflow: hidden;
+    vertical-align: bottom;
+}
+
+.starRating:not(old) > input {
+    margin-right: -100%;
+    opacity: 0;
+}
+
+.starRating:not(old) > label {
+    display: block;
+    float: right;
+    position: relative;
+    background: url('../svg/star-off.svg');
+    background-size: contain;
+}
+
+.starRating:not(old) > label:before {
+    content: '';
+    display: block;
+    width: 1.5em;
+    height: 1.5em;
+    background: url('../svg/star-on.svg');
+    background-size: contain;
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
+
+.starRating:not(old) > label:hover:before,
+.starRating:not(old) > label:hover ~ label:before,
+.starRating:not(:hover) >:checked ~ label:before {
+    opacity: 1;
+}

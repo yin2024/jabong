@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Context displayName="JSP Servlet Example" docBase="jabong_test"
+	path="/jabong_test" reloadable="true">
+	<!-- MySQL -->
+	<Resource name="jdbc/jabong" type="javax.sql.DataSource"
+		username="adminlfpZiA8" password="zQjFHBlpieSq" driverClassName="com.mysql.jdbc.Driver"
+		url="jdbc:mysql://127.2.59.2:3306/jabong" connectionProperties="useUnicode=yes;characterEncoding=utf8;"
+		maxActive="8" maxIdle="4" maxWait="5000" />
+</Context>
